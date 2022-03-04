@@ -1,0 +1,17 @@
+<!-- PRINCIPAL PAGE -->
+{% extends 'layout.html' %} {% block content %}
+
+<form class="form w-50 mx-auto my-4" action="{{ url_for('times.set_time') }}" method="POST">
+  <h2 class="text-white text-center" id="form-title">Set the time to comparate</h2>
+  <div class="form-control mx-auto text-center">
+    <label class="text-secondary" for="time-to-comparate">Time to comparate</label>
+    <input type="text" id="time-to-comparate" placeholder="18.02" name="new-time">
+    <button class="btn btn-primary my-3 w-50">Set</button>
+  </div>
+</form>
+
+<h2 class="text-white bg-secondary">
+  Time Current <span class="text-primary">{{ time_current }}</span>
+</h2>
+
+{% endblock %}

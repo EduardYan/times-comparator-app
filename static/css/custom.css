@@ -1,0 +1,19 @@
+/*
+  Custom styles to use.
+*/
+
+body {
+  background: #636363 url('../img/brazil-image.jpg') no-repeat;
+  background-size: cover;
+}
+
+
+/* MAIN CONTAINER */
+
+#main-container {
+  margin: 3rem auto 9rem;
+}
+
+#form-title {
+  background-color: #323232;
+}
