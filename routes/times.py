@@ -4,8 +4,13 @@ in the server.
 """
 
 
-from flask import Blueprint, redirect, render_template, request, url_for, flash
-from helpers.utils import save_time_in_file, get_time_current, comparate_time, InvalidTime
+from flask import Blueprint, flash, redirect, render_template, request, url_for
+from helpers.utils import (
+  InvalidTime,
+  comparate_time,
+  get_time_current,
+  save_time_in_file
+)
 
 # routes
 times_routes = Blueprint('times', __name__)
@@ -73,6 +78,15 @@ def comparate_time_route():
       flash('The time to comparate not is valid.')
 
       return redirect(url_for('times.index'))
+
+
+@times_routes.route('/settings')
+def settings():
+  """
+  Route for render the settings page.
+  """
+
+  return render_template('settings.html')
 
 
 @times_routes.route('/about')

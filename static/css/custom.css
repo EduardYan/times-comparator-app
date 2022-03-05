@@ -3,7 +3,8 @@
 */
 
 body {
-  background: #636363 url('../img/brazil-image.jpg') no-repeat;
+  background-color: #636363;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -74,6 +75,28 @@ body {
 }
 
 
+/* SETTING CARDS */
+
+#settings-card h1 {
+  font-weight: lighter;
+}
+
+#view-backgrounds {
+  display: flex;
+}
+
+
+/* BACKGROUND BUTTONS */
+
+.background-button {
+  border-style: none;
+}
+
+.background-button img {
+  width: 100%;
+}
+
+
 /* FOOTER */
 
 #main-footer {
@@ -88,11 +111,23 @@ body {
   #main-container {
     width: 70%;
   }
+  #view-backgrounds {
+    display: block;
+  }
+  .background-button {
+    margin: 1rem 0;
+  }
 }
 
 @media (max-width: 700px) {
   #main-container {
     width: 80%;
+  }
+  #view-backgrounds {
+    display: block;
+  }
+  .background-button {
+    margin: 1rem 0;
   }
   .form-button {
     width: 70%;
@@ -101,11 +136,18 @@ body {
 
 @media (max-width: 500px) {
   #main-container {
-    width: 90%;
+    width: 95%;
   }
   #time-current {
     margin-right: 0;
     display: block;
+  }
+  /* change to block display not flex */
+  #view-backgrounds {
+    display: block;
+  }
+  .background-button {
+    margin: 1rem 0;
   }
   .form-button {
     width: 70%;

@@ -1,0 +1,52 @@
+{% extends 'layout.html' %} {% block content %}
+
+<style>
+  /* more big to show image */
+  
+  #main-container {
+    margin: 3rem auto 11rem;
+    width: 80%;
+  }
+  
+  @media (max-width: 500px) {
+    #main-container {
+      width: 95%;
+    }
+  }
+</style>
+
+<article class="card bg-dark" id="settings-card">
+  <div class="card-header">
+
+    <h1 class="text-white">Settings</h1>
+
+  </div>
+  <div class="card-body">
+    <label class="text-white" for="first-background">Set the Background</label>
+    <div class="my-3" id="view-backgrounds">
+      <button class="btn btn-secondary mx-2 p-0 background-button" id="first-background">
+      <img src="{{ url_for('static', filename = 'img/malasia-image.jpg') }}" alt="malasia-image">
+    </button>
+      <button class="btn btn-secondary mx-2 p-0 background-button">
+      <img src="{{ url_for('static', filename = 'img/silverstone-image.jpg') }}" alt="silverstone-image">
+    </button>
+      <button class="btn btn-secondary mx-2 p-0 background-button">
+      <img src="{{ url_for('static', filename = 'img/turkia-image.jpg') }}" alt="turkia-image">
+    </button>
+      <button class="btn btn-secondary mx-2 p-0 background-button">
+      <img src="{{ url_for('static', filename = 'img/usa-image.jpg') }}" alt="usa-image">
+    </button>
+      <button class="btn btn-secondary mx-2 p-0 background-button">
+      <img src="{{ url_for('static', filename = 'img/brazil-image.jpg') }}" alt="brazil-image">
+    </button>
+      <button class="btn btn-secondary mx-2 p-0 background-button">
+      <img src="{{ url_for('static', filename = 'img/bahrain-image.jpg') }}" alt="bahrain-image">
+    </button>
+
+    </div>
+  </div>
+</article>
+
+
+
+{% endblock %}
