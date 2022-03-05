@@ -1,6 +1,19 @@
 <!-- ABOUT PAGE -->
-{% extends 'layout.html' %}
+{% extends 'layout.html' %} {% block content %}
 
-{% block content %}
-<h2>About Page</h2>
+<style>
+  #main-container {
+    margin: 3rem auto 21rem;
+  }
+</style>
+
+<!-- ABOUT VIEW -->
+<article class="card bg-dark">
+  <div class="card-header">
+    <h3 class="text-white text-center">About</h3>
+  </div>
+  <div class="card-body">
+    <p class="text-white">This is a web application for make comparations between times. Made for Daniel Yanes.</p>
+  </div>
+</article>
 {% endblock %}

@@ -1,0 +1,20 @@
+<!-- MESSAGE TO USE -->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+{% for message in messages %}
+<div class="alert 
+{% if message == 'The time for set not is valid.' or message == 'The time to comparate not is valid.' %}
+alert-danger
+{% else %}
+alert-success 
+{% endif %}
+alert-dismissible fade show" role="alert">
+  <strong>
+    {{ message }}
+  </strong>
+  <button class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+  </button>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}

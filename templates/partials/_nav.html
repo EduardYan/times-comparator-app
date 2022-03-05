@@ -1,0 +1,28 @@
+<!-- NAVIGATION TO USE -->
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/nav.css') }}">
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+
+    <a class="navbar-brand" href="{{ url_for('times.index') }}">Times Comparation</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navBar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ url_for('times.index') }}">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('times.about') }}">
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

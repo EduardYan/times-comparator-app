@@ -12,6 +12,9 @@ from routes.times import times_routes
 # creating the server
 app = Flask(__name__)
 
+# settings
+app.secret_key = 'mysecretkey'
+
 
 # setting the routes
 app.register_blueprint(times_routes)

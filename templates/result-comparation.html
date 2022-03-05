@@ -1,0 +1,25 @@
+<!-- PAGE FOR SHOW THE RESULT OF THE COMPARATION -->
+{% extends 'layout.html' %} {% block content %}
+<article class="card" id="result-comparation-card">
+  <div class="card-header">
+    <h2 class="text-white" style="font-weight: lighter;">
+      Result of Comparation
+    </h2>
+  </div>
+  <div class="card-body">
+    <p class="text-center
+    {% if difference_value > 20 %}
+    text-danger
+    {% else %}
+    text-success
+    {% endif %}">
+      {{ difference_value }} seconds
+    </p>
+  </div>
+  <div class="card-footer">
+    <div class="mx-auto w-100 text-center">
+      <a class="btn btn-secondary w-50" href="{{ url_for('times.index') }}">Keep comparing</a>
+    </div>
+  </div>
+</article>
+{% endblock %}

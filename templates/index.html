@@ -1,17 +1,34 @@
 <!-- PRINCIPAL PAGE -->
 {% extends 'layout.html' %} {% block content %}
 
-<form class="form w-50 mx-auto my-4" action="{{ url_for('times.set_time') }}" method="POST">
-  <h2 class="text-white text-center" id="form-title">Set the time to comparate</h2>
-  <div class="form-control mx-auto text-center">
-    <label class="text-secondary" for="time-to-comparate">Time to comparate</label>
-    <input type="text" id="time-to-comparate" placeholder="18.02" name="new-time">
-    <button class="btn btn-primary my-3 w-50">Set</button>
+<!-- MESSAGES -->
+{% include 'partials/_messages.html' %}
+
+<!-- SET TIME VIEW -->
+<form class="form mx-auto my-4" action="{{ url_for('times.set_time') }}" method="POST">
+  <div class="form-control mx-auto text-center set-time-form">
+    <h2 class="text-white text-center form-title">Set the time to comparate</h2>
+    <label class="text-secondary" for="new-time">Time to comparate</label>
+    <input type="text" id="new-time" placeholder="18.02" name="new-time">
+    <button class="btn btn-primary my-3 form-button">Set</button>
   </div>
 </form>
 
-<h2 class="text-white bg-secondary">
-  Time Current <span class="text-primary">{{ time_current }}</span>
-</h2>
+<!-- TIME CURRENT VIEW -->
+<section class="p-2" id="time-current-view">
+  <h2 class="text-white">
+    Time Current <span class="d-inline=block" id="time-current">{{ time_current.value }} seconds</span>
+  </h2>
+</section>
+
+<!-- COMPARE TIME VIEW -->
+<form class="form" action="{{ url_for('times.comparate_time_route') }}" method="POST" id="comparate-form">
+  <div class="form-control w-100 mx-auto text-center set-time-form">
+    <h2 class="text-white form-title">Write the time to make the comparation</h2>
+    <label class="text-secondary" for="time-to-comparate">Time to comparate</label>
+    <input type="text" placeholder="12.34" id="time-to-comparate" name="time-to-comparate">
+    <button class="btn btn-primary my-3 form-button">Comparate</button>
+  </div>
+</form>
 
 {% endblock %}

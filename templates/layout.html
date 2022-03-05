@@ -15,11 +15,15 @@
 
 <body>
 
+  {% include 'partials/_nav.html' %}
+
   <!-- CONTAINER -->
   <div class="container" id="main-container">
     {% block content %}
     {% endblock %}
   </div>
+
+  {% include 'partials/_footer.html' %}
 
 
   <!-- BOOTSTRAP SCRIPTS -->

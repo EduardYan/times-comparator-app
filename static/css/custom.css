@@ -12,8 +12,102 @@ body {
 
 #main-container {
   margin: 3rem auto 9rem;
+  width: 50%;
 }
 
-#form-title {
+
+/* FORM STYLES */
+
+.set-time-form {
   background-color: #323232;
+  border-style: none;
+}
+
+.form-title {
+  background-color: #323232;
+  font-weight: lighter;
+}
+
+
+/* Buttons of the forms */
+
+.form-button {
+  width: 50%;
+}
+
+
+/* VIEW OF TIME CURRENT */
+
+#time-current-view {
+  background-color: #959595;
+  opacity: .9;
+  display: flex;
+}
+
+#time-current-view h2 {
+  font-weight: lighter;
+}
+
+
+/* Time current value */
+
+#time-current {
+  color: #4444ee;
+}
+
+
+/* COMPARATION FORM */
+
+#comparate-form {
+  margin: 4rem 0 10rem 0;
+}
+
+
+/* RESULT COMPARATION */
+
+#result-comparation-card {
+  background-color: #323232;
+}
+
+#result-comparation-card p {
+  font-size: 1.4rem;
+}
+
+
+/* FOOTER */
+
+#main-footer {
+  background-color: #344966;
+  opacity: .9;
+}
+
+
+/* RESPONSIVE DESING */
+
+@media (max-width: 900px) {
+  #main-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  #main-container {
+    width: 80%;
+  }
+  .form-button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-container {
+    width: 90%;
+  }
+  #time-current {
+    margin-right: 0;
+    display: block;
+  }
+  .form-button {
+    width: 70%;
+  }
 }
