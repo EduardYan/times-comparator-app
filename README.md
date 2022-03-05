@@ -37,5 +37,8 @@ _Basic Configuration for Default:_
 $ python3 index.py
 ```
 
+## Screenshot.
+![screenshot-image](./docs/screenshot.png)
+
 ## Problems or Error.
 <a href="mailto:eduarygp@gmail.com" target="_blank" rel="noreferer">Contact Me</a>
