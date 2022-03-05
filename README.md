@@ -23,7 +23,7 @@ $ pip3 install -r requirements.txt
 __There are a file configuration there you can set some configurations for the server
 like the port to listen.__
 
-_Basic Configuration for Default._
+_Basic Configuration for Default:_
 
 ```json
 {
