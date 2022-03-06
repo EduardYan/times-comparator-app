@@ -7,7 +7,7 @@
 
     <a class="navbar-brand" href="{{ url_for('times.index') }}">
       F1 Times Comparator
-      <i class="fa-light fa-clock"></i>
+      <i class="fa-solid fa-clock"></i>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,10 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ url_for('times.settings') }}">Settings</a>
+          <a class="nav-link" href="{{ url_for('times.settings') }}">
+            Settings
+            <i class="fa-solid fa-gear"></i>
+          </a>
         </li>
       </ul>
     </div>
