@@ -2,6 +2,12 @@
   Custom styles to use.
 */
 
+body,
+#main-footer {
+  /* font to use */
+  font-family: 'Hind', Verdana, sans-serif;
+}
+
 body {
   background-color: #636363;
   background-repeat: no-repeat;

@@ -15,10 +15,10 @@ const backgroundButtons = document.querySelectorAll('.background-button');
 
 // setting the initial background
 const srcImage = localStorage.getItem('background-image')
-if (srcImage != null || srcImage != '') {
-  changeBackground(srcImage)
-} else {
+if (srcImage == null || srcImage == '') {
   changeBackground(backgroundSrcDefault)
+} else {
+  changeBackground(srcImage)
 }
 
 backgroundButtons.forEach((button) => {

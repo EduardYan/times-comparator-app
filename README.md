@@ -38,7 +38,7 @@ $ python3 index.py
 ```
 
 ## Screenshot.
-![screenshot-image](./docs/screenshot.png)
+![screenshot-image](./docs/screenshots/screenshot.png)
 
 ## Problems or Error.
 <a href="mailto:eduarygp@gmail.com" target="_blank" rel="noreferer">Contact Me</a>
