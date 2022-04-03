@@ -6,7 +6,7 @@ import { changeBackground } from './helpers/utils.js';
 
 
 // defautl background to use
-var backgroundSrcDefault = '/static/img/brazil-image.jpg'
+var backgroundSrcDefault = '/static/img/silverstone-image.jpg'
 
 
 // buttons for change the background
